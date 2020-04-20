@@ -1,7 +1,9 @@
 let container = document.querySelector('#container');
 container.style.display = 'grid';
-container.style.gridTemplateRows = 'repeat(var(--grid-rows), 50px)';
-container.style.gridTemplateColumns = 'repeat(var(--grid-cols), 50px)';
+container.style.gridTemplateRows = 'repeat(var(--grid-rows), auto)';
+container.style.gridTemplateColumns = 'repeat(var(--grid-cols), auto)';
+container.style.width = '700px';
+container.style.height = '700px';
 
 let btnContainer = document.querySelector('#btnContainer');
 let startBtn = document.createElement('button');
@@ -24,9 +26,6 @@ function makeRows(rows, cols){
 }
 
 makeRows(rows, cols);
-
-startBtn.addEventListener('click', function (e){
-});
 
   let cells = document.querySelectorAll('.grid-item');
   let cell = document.querySelector('.grid-item');
