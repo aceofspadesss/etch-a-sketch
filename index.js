@@ -47,14 +47,9 @@ makeRows(rows, cols);
       cell.addEventListener('mouseover', function (e){
         cell.style.backgroundColor = 'black';
       });
-    });
-
-
-  });
-
-
-  resetBtn.addEventListener('click', function (e){
-  cells.forEach(cell => {
-    cell.style.backgroundColor = 'white';
+      if (ask > 99){
+        cell.style.border = '1px solid transparent';
+        container.style.border ='1px solid #ddd';
+      }
     });
   });
