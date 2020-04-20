@@ -19,7 +19,6 @@ function makeRows(rows, cols){
   for (i = 0; i < (rows * cols); i++){
     let cell = document.createElement('div');
     container.appendChild(cell).className = 'grid-item';
-    cell.style.padding = '3px';
     cell.style.border = '1px solid #ddd';
     cell.style.textAlign = 'center';
   }
